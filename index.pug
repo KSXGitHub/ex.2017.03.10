@@ -3,27 +3,26 @@ html
   head
     meta(charset = 'utf-8')
     title calc
-    script(type="text/javascript" src="java.js")
-    <link href="style.css" type="text/css" rel="stylesheet">
+    // link(href = 'style.css' type = 'text/css' rel = 'stylesheet')
   body
     h1 Caculator design by NMC
     i Nhập số a:
-    input#so1(type="number")
+    input#a(type="number")
     br
     i Nhập số b:
-    input#so2(type="number")
+    input#b(type="number")
     br
     i kết quả cộng:
-    input#kqc.a(type="text" disabled="disabled")
+    output#kq-cong(type="text" disabled="disabled")
     br
     i kết quả trừ:
-    input#kqt.a(type="text" disabled="disabled")
+    output#kq-tru(type="text" disabled="disabled")
     br
     i kết quả nhân:
-    input#kqn.a(type="text" disabled="disabled")
+    output#kq-nhan(type="text" disabled="disabled")
     br
     i kết quả chia:
-    input#kqch.a(type="text" disabled="disabled")
+    output#kq-chia(type="text" disabled="disabled")
     br
-    input(type="button" onclick = "ketqua()" value="Kết Quả")
-    script KtEnter()
+    button#calc Kết quả
+    script(type="text/javascript" src="script.js")
