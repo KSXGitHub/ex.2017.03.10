@@ -1,0 +1,14 @@
+{
+  "name": "vidu2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "pug index.pug --pretty"
+  },
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha"
+  },
+  "author": "Cuong",
+  "license": "ISC"
+}
