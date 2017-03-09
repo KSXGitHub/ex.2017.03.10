@@ -7,11 +7,15 @@ const kqTruOutput = document.getElementById('kq-tru')
 const kqNhanOutput = document.getElementById('kq-nhan')
 const kqChiaOutput = document.getElementById('kq-chia')
 
-document.getElementById('calc').addEventListener('click', () => {
+const ketqua = () => {
   const a = Number(aInput.value)
   const b = Number(bInput.value)
   kqCongOutput.textContent = a + b
   kqTruOutput.textContent = a - b
   kqNhanOutput.textContent = a * b
   kqChiaOutput.textContent = a / b
-}, false)
+}
+
+document.getElementById('calc').addEventListener('click', ketqua, false)
+aInput.addEventListener('change', ketqua, false)
+bInput.addEventListener('change', ketqua, false)
