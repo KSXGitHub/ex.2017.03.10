@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta(charset = 'utf-8')
+    title calc
+    // link(href = 'style.css' type = 'text/css' rel = 'stylesheet')
+  body
+    h1 Caculator design by NMC
+    i Nhập số a:
+    input#a(type="number")
+    br
+    i Nhập số b:
+    input#b(type="number")
+    br
+    i kết quả cộng:
+    output#kq-cong(type="text" disabled="disabled")
+    br
+    i kết quả trừ:
+    output#kq-tru(type="text" disabled="disabled")
+    br
+    i kết quả nhân:
+    output#kq-nhan(type="text" disabled="disabled")
+    br
+    i kết quả chia:
+    output#kq-chia(type="text" disabled="disabled")
+    br
+    button#calc Kết quả
+    script(type="text/javascript" src="script.js")
