@@ -1,3 +1,9 @@
 'use strict'
+const expression = document.getElementById('expression')
+const output = document.getElementById('output')
 
-// Your code here...
+document.getElementById('calculate').addEventListener('click', result, false)
+
+function result () {
+  output.textContent = eval(expression.value)
+}
