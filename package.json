@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "standard && pug index.pug --pretty"
+    "test": "pug index.pug --pretty"
   },
   "dependencies": {
-    "pug-cli": "^1.0.0-alpha",
-    "standard": "^9.0.1"
+    "pug-cli": "^1.0.0-alpha"
   },
   "author": "Cuong",
   "license": "ISC"
