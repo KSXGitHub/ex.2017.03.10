@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "pug index.pug --pretty"
+    "test": "pug index.pug --pretty",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "pug-cli": "^1.0.0-alpha"
+    "pug-cli": "^1.0.0-alpha",
+    "snyk": "^1.316.1"
   },
   "author": "Cuong",
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
